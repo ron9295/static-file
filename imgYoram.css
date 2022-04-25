@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    padding-top: 3vh;
+    background-image: linear-gradient(rgba(1, 27, 76, 0.5), rgba(1, 27, 76, 0.5)), url("https://wallpaper.dog/large/10788731.jpg");
+    background-position: center;
+}
+
+.pageBody,
+.pageBodyCenterBody,
+.pageHeaderMenu,
+.pageBodyCenterFooter {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.pageHeaderMenu480 {
+    display: none;
+}
+
+.menu480 {
+    display: none;
+}
+
+.pageBody {
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-bottom: 20px;
+    max-height: 78vh;
+    width: 97vw;
+}
+
+.pageHeader {
+    padding-bottom: 60px;
+    position: relative;
+    z-index: 10;
+}
+
+.pageHeaderMenuLink {
+    flex: 5%;
+}
+
+.pageHeaderMenuSpace {
+    flex: 67%;
+}
+
+.pageHeaderMenuSearch {
+    flex: 10%;
+}
+
+.pageHeaderMenuLink a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.pageHeaderMenuLink a:hover {
+    transform: scale(1.3, 1.3);
+}
+
+.pageHeaderMenu {
+    /* line-height: 60px; */
+    background: rgba(255, 255, 255, 0.6);
+    padding-top: 20px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.pageBodyLeft,
+.pageBodyRight {
+    display: none;
+    flex: 18%;
+    background-image: linear-gradient(rgb(112, 70, 12), rgb(76, 21, 1));
+    writing-mode: ;
+    text-orientation: upright;
+}
+
+.pageBodyCenter {
+    flex: 51%;
+    padding: 4%;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.pageBodyLeft,
+.pageBodyRight,
+.pageBodyCenter {
+    border: 1px solid rgba(0, 0, 0, .7);
+    border-radius: 6px;
+}
+
+.pageBodyCenterBodyCard {
+    width: 25%;
+}
+
+.cardFace {
+    border-radius: 100%;
+    background-image: url(https://static.wikia.nocookie.net/harrypotter/images/a/aa/Voldemort_Headshot_DHP1.png/revision/latest/top-crop/width/360/height/360?cb=20161203031453);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 60px;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 3px black, 0 0 5px blue, 0 0 5px darkblue;
+}
+
+.cardContent {
+    overflow-wrap: anywhere;
+    padding: 10px;
+}
+
+.pageBodyCenterFooter {
+    padding: 10px 40px 30px 40px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .7);
+    border-radius: 6px;
+    width: 72%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pageBodyCenterHeader {
+    padding-bottom: 50px;
+}
+
+.pageBodyCenterBody {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 100px;
+}
+
+.card {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .7);
+    border-radius: 4px;
+    height: 40vh;
+    max-height: 40vh;
+}
+
+
+/*.card:hover {
+    transform: scale(1.01,1.01);
+    box-shadow: 2px 2px 3px rgb(0,0,0,.4);
+}*/
+
+.cardText {}
+
+
+/*.card:hover .cardText {
+    font-size:  2rem;
+}*/
+
+.drinkTable {
+    margin-top: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+}
+
+.drinkTable th {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    font-size: .8rem;
+    font-weight: bold;
+}
+
+.drinkTable td {
+    border: 1px solid black;
+    font-size: .8rem;
+    text-align: left;
+}
+
+.carsInst {
+    font-size: .6rem;
+    text-align: left;
+    padding: 10px;
+}
+
+.searchField {
+    position: relative;
+}
+
+.searchField::before {
+    background-image: url('https://icons.veryicon.com/png/o/application/minimalist-icon/search-532.png');
+    width: 15px;
+    background-position: center center;
+    background-size: contain;
+    content: "";
+    position: absolute;
+    top: -9px;
+    left: 13px;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.searchInput {
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, .7);
+    width: 80%;
+    padding-left: 15px;
+}
+
+.a1 {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    color: green;
+}
+
+.a2 {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    color: red;
+}
+
+.a3 {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    color: yellow;
+}
+
+.hide {
+    display: none !important;
+}
+
+h1 {
+    color: black;
+    font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+    .pageHeaderMenu480 {
+        display: block;
+        background-color: rgba(94, 13, 13, 1);
+        height: 60px;
+    }
+    .pageHeaderMenu,
+    .pageBodyLeft,
+    .pageBodyRight {
+        display: none;
+    }
+    .menu480 {
+        z-index: 10;
+        background-color: white;
+        border: 1px solid rgba(94, 13, 13, 1);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        overflow-y: visible;
+        width: 50%;
+        position: relative;
+        top: 20px;
+        left: 20px;
+    }
+    .pageHeaderMenuLink {
+        color: rgba(94, 13, 13, 1);
+    }
+    .imgbtn480 {
+        width: 20px;
+        height: 20px;
+    }
+    .pageBodyCenterBody {
+        padding-bottom: 20px;
+    }
+    .pageBodyCenterBodyCard {
+        flex: 40%;
+    }
+    .pageBodyCenterBodyCardHelper {
+        flex: 100%;
+    }
+}

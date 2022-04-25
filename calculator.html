@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="stylesheets/calc.css">
+
+</head>
+
+<body>
+    <div class="body">
+        <div class="calculator">
+            <div class="alldisplay">
+                <div class="display" id="display">0
+                </div>
+                <div class="output">
+                    <div id="result" class="res">0</div>
+                    <div id="operator" class="op"></div>
+                </div>
+            </div>
+            <div class="calc">
+                <div class="numbers">
+                    <div class="row">
+                        <div class="num" onclick="clickDel()">
+                            <<</div>
+                                <div class="num" onclick="deleteNum()">ce</div>
+                                <div class="num" onclick="restart()">c</div>
+                        </div>
+                        <div class="row">
+                            <div class="num" onclick="setResult()">1</div>
+                            <div class="num" onclick="setResult()">2</div>
+                            <div class="num" onclick="setResult()">3</div>
+                        </div>
+                        <div class="row">
+                            <div class="num" onclick="setResult()">4</div>
+                            <div class="num" onclick="setResult()">5</div>
+                            <div class="num" onclick="setResult()">6</div>
+                        </div>
+                        <div class="row">
+                            <div class="num" onclick="setResult()">7</div>
+                            <div class="num" onclick="setResult()">8</div>
+                            <div class="num" onclick="setResult()">9</div>
+                        </div>
+                        <div class="rowlast">
+                            <div class="num" onclick="setResult()">.</div>
+                            <div id="zero" class="num" onclick="setResult()">0</div>
+                            <div id="sum" class="num" onclick="showSum()">=</div>
+                        </div>
+                    </div>
+                    <div class="operators">
+                        <div class="operator" onclick="" id="changec">change<br>style</div>
+                        <div class="operator" onclick="setOperator()">+</div>
+                        <div class="operator" onclick="setOperator()">-</div>
+                        <div class="operator" onclick="setOperator()">*</div>
+                        <div id="last" class="operator" onclick="setOperator()">/</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="javascripts/calc.js"></script>
+</body>
+
+</html>
